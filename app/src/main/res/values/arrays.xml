@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="clock_locate_entries">
+        <item>@string/clock_locate_left_up</item>
+        <item>@string/clock_locate_right_up</item>
+    </string-array>
+
+    <string-array name="clock_locate_values" translatable="false">
+        <item>left</item>
+        <item>right</item>
+    </string-array>
+
+    <string-array name="app_list_entries">
+        <item>@string/app_style_list</item>
+        <item>@string/app_style_grid</item>
+    </string-array>
+
+    <string-array name="app_list_values" translatable="false">
+        <item>list</item>
+        <item>grid</item>
+    </string-array>
+
+    <string-array name="clock_size_entries" translatable="false">
+        <item>32</item>
+        <item>34</item>
+        <item>36</item>
+        <item>38</item>
+        <item>40</item>
+        <item>42</item>
+        <item>44</item>
+        <item>46</item>
+        <item>48</item>
+        <item>50</item>
+        <item>52</item>
+        <item>54</item>
+        <item>56</item>
+        <item>58</item>
+        <item>60</item>
+        <item>62</item>
+        <item>64</item>
+        <item>66</item>
+        <item>68</item>
+        <item>70</item>
+    </string-array>
+
+    <string-array name="language_entries">
+        <item>@string/language_default</item>
+        <item>@string/language_it</item>
+        <item>@string/language_fr</item>
+        <item>@string/language_es</item>
+        <item>@string/language_en</item>
+        <item>@string/language_zh</item>
+    </string-array>
+
+    <string-array name="language_values" translatable="false">
+        <item>system</item>
+        <item>it</item>
+        <item>fr</item>
+        <item>es</item>
+        <item>en</item>
+        <item>zh</item>
+    </string-array>
+</resources>

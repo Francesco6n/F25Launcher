@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">F25Launcher</string>
+    <string name="menu">Menu</string>
+    <string name="contact">Contatti</string>
+    <string name="power_btn">Spegni</string>
+    <string name="default_date">10 Ago 1919</string>
+    <string name="vol_media_title">Volume Media/Giochi</string>
+    <string name="vol_ring_title">Volume Suoneria</string>
+    <string name="vol_alarm_title">Volume Sveglia</string>
+    <string name="volume_changer">Regolazione Volume</string>
+    <string name="default_lunar">" "</string>
+    <string name="menu_set_wallpaper">Imposta sfondo</string>
+    <string name="menu_settings_system">Impostazioni di sistema</string>
+    <string name="menu_start">Come si usa?</string>
+    <string name="menu_volume_dash">Regolazione Volume</string>
+    <string name="menu_settings_launcher">Impostazioni Launcher</string>
+    <string name="menu_about_me">Informazioni</string>
+    <string name="menu_set_wallpaper_sum">Personalizza il tuo dispositivo</string>
+    <string name="menu_settings_system_sum">Configura il tuo dispositivo</string>
+    <string name="menu_start_sum">Fammi sapere!</string>
+    <string name="menu_volume_sum">Cambia volume dispositivo</string>
+    <string name="menu_settings_launcher_sum">Configura il tuo launcher</string>
+    <string name="menu_about_sum">Informazioni sul launcher</string>
+    <string name="menu_title">Menu</string>
+    <string name="choose_wallpaper">Scegli un\'immagine come sfondo del tuo dispositivo!</string>
+    <string name="back">Indietro</string>
+    <string name="default_volume" translatable="false">0</string>
+    <string name="default_app_title">Titolo App</string>
+    <string name="app_list_title">Elenco App</string>
+    <string name="app_menu_string">Menu</string>
+    <string name="app_menu_open">Apri</string>
+    <string name="app_menu_uninstall">Disinstalla</string>
+    <string name="app_menu_info">Info App</string>
+    <string name="menu_about_phone">Informazioni telefono</string>
+    <string name="current_volume">Volume attuale :</string>
+    <string name="what">Cosa ti aspetti? XD</string>
+    <string name="version">"Versione: "</string>
+    <string name="channel_name">"Canale: "</string>
+    <string name="debug_type">"Tipo debug: "</string>
+    <string name="connect_us">Contattaci</string>
+    <string name="about_desc">Wow che bel Gensokyo! \\n Un Launcher semplice per telefoni Android con D-Pad. \\n Versione DuoQin</string>
+    <string name="easter_egg_string">Che bel Gensokyo!</string>
+    <string name="error_lock_phone">Errore: Blocco telefono fallito!</string>
+    <string name="preference_main_category">Impostazioni Schermo Principale</string>
+    <string name="clock_locate_left_up">In alto a sinistra</string>
+    <string name="clock_locate_right_up">In alto a destra</string>
+    <string name="clock_locate_left_down">In basso a sinistra</string>
+    <string name="clock_locate_right_down">In basso a destra</string>
+    <string name="clock_locate_custon">Posizione personalizzata</string>
+    <string name="clock_locate_title">Posizione orologio</string>
+    <string name="preference_main_clock_size">Dimensione orologio</string>
+    <string name="default_clock_size" translatable="false">58</string>
+    <string name="preference_main_default_launcher">Cambia app predefinite</string>
+    <string name="preference_func_category">Impostazioni Funzioni</string>
+    <string name="warn_recent_disable">Tasto app recenti disattivato.</string>
+    <string name="preference_admin_settings">Impostazioni Amministratore</string>
+    <string name="this_is_system_app">Questa è un\'app di sistema, non può essere disinstallata!</string>
+    <string name="refreshing_pkg_list">Aggiornamento elenco app…</string>
+    <string name="preference_carrier">Mostra nome operatore</string>
+    <string name="preference_carrier_summary">Mostra nome operatore nell\'orologio</string>
+    <string name="default_carrier">Genso Telecom</string>
+    <string name="preference_enable_dial">Abilita Tastierino</string>
+    <string name="preference_dial_summary">Abilita modalità tastierino</string>
+    <string name="permission_denied">Sembra che un permesso sia stato negato e non possiamo fornire questa funzione</string>
+    <string name="err_pkg_not_found">Impossibile trovare l\'app. L\'hai disinstallata o disattivata?</string>
+    <string name="content_desc_app_icon">Icona App</string>
+    <string name="preference_app_list">Stile elenco app</string>
+    <string name="app_style_list">Elenco</string>
+    <string name="app_style_grid">Griglia</string>
+    <string name="loading">Caricamento…</string>
+    <string name="ok">OK</string>
+    <string name="simp_dialer">Telefono</string>
+    <string name="simp_msg">Messaggi</string>
+    <string name="simp_contact">Contatti</string>
+    <string name="simp_media">Multimedia</string>
+    <string name="simp_netsrv">Servizi Internet</string>
+    <string name="simp_settings">Impostazioni</string>
+    <string name="simp_file">Gestore File</string>
+    <string name="simp_tools">Strumenti</string>
+    <string name="simp_callcenter">Centro Chiamate</string>
+    <string name="preference_app_list_category">Elenco App</string>
+    <string name="preference_app_list_func">Usa stile menu semplice</string>
+    <string name="preference_app_list_func_category">Abilitando questa opzione verranno mostrate solo le app di sistema, le altre saranno nascoste</string>
+    <string name="err_string">Errore</string>
+    <string name="trd_apps">Cassetta Attrezzi</string>
+    <string name="osl">Licenze Open Source</string>
+    <string name="status_reload_launcher">Riavvia</string>
+    <string name="abort_msg_uninstall_self">Disinstallo me stesso, annullo.</string>
+    <string name="preference_toolbox_enable_pwd">Abilita password Cassetta Attrezzi</string>
+    <string name="preference_toolbox_enable_pwd_summary">Se abilitato, l\'accesso alla cassetta attrezzi richiederà una password.
+    </string>
+    <string name="keyguard_title">Autenticazione password Cassetta Attrezzi</string>
+    <string name="keyguard_description">Inserisci la password per accedere alla Cassetta Attrezzi.</string>
+    <string name="preference_security_category">Sicurezza</string>
+    <string name="preference_toolbox_pwd_keyguard">Usa autenticazione di sistema</string>
+    <string name="preference_toolbox_pwd_keyguard_summary">\
+        "Se abilitato, usa la password di blocco schermo del sistema. Se disabilitato, puoi usare una password personalizzata. "
+    </string>
+    <string name="preference_toolbox_pwd_custom">Usa password personalizzata</string>
+    <string name="preference_toolbox_pwd_custom_summary">Puoi impostare una password personalizzata.</string>
+    <string name="chs_lunar_text" translatable="false">农历  <xliff:g id="ganzhi">%s</xliff:g><xliff:g id="animal">%s</xliff:g> <xliff:g id="string">%s</xliff:g></string>
+    <string name="password_title">Inserisci Password</string>
+    <string name="password_wrong">Password errata!</string>
+    <string name="system_no_password">Il sistema non ha una password</string>
+    <string name="preference_callsms">Abilita contatore chiamate/SMS</string>
+    <string name="preference_callsms_summary">Mostra contatore chiamate perse e SMS nell\'orologio</string>
+    <string name="permission_required_title">Servono alcuni permessi necessari</string>
+    <string name="permission_dnd_require">Concedi il permesso Non disturbare per attivare/disattivare la modalità</string>
+    <string name="ring_mode_title">Modalità</string>
+    <string name="ring_mode_normal">Normale</string>
+    <string name="ring_mode_vibrate">Vibrazione</string>
+    <string name="ring_mode_dnd">Non disturbare</string>
+    <string name="shortcuts_title">Scorciatoie App</string>
+    <string name="no_shortcuts_toast">Questa app non ha scorciatoie</string>
+    <string name="not_default_launcher_shortcut_msg">Questo software non è il launcher predefinito, non può usare le scorciatoie!</string>
+    <string name="focus_visual_title">Effetto zoom sul focus</string>
+    <string name="focus_visual_summary">Quando abilitato, selezionando un\'app e spostando il focus si avrà un effetto di ingrandimento.</string>
+    <string name="restart_dialog_msg">Questo riavvierà il launcher. È consigliato solo se c\'è un problema con il launcher. Continuare?</string>
+    <string name="dark_mode_title">Modalità scura</string>
+    <string name="dark_mode_summary">L\'interfaccia dell\'app userà toni scuri quando questa funzione è attiva</string>
+    <string name="dark_mode_not_match">Attenzione! Questa funzione può causare instabilità se non corrisponde allo stato della modalità scura del sistema. Puoi tornare alla normalità premendo il tasto di riaggancio.</string>
+    <string name="dark_mode_not_support">Il tuo dispositivo non supporta la modalità scura!</string>
+
+    <!-- Sort type -->
+    <string name="sort_type_title">Tipo ordinamento</string>
+    <string name="sort_type_pinyin">Nome (PinYin)</string>
+    <string name="sort_type_default">Predefinito</string>
+
+    <!-- Carrier Name -->
+    <string name="carrier_no_sim_text">Nessuna SIM</string>
+    <string name="carrier_china_unicom">China Unicom</string>
+    <string name="carrier_cmcc">CMCC</string>
+    <string name="carrier_chn_ct">China Telecom</string>
+
+    <!-- Hide App -->
+    <string name="menu_hide_app_label">App Nascoste</string>
+    <string name="menu_hide_app_summary">
+        Se abilitato, puoi tenere premuta un\'app nella schermata delle app e scegliere di nasconderla.
+        Dopo averla nascosta, puoi aprire l\'elenco nell\'opzione qui sotto, o premere il tasto 5 tre volte nella schermata principale per aprirlo.
+    </string>
+    <string name="menu_clear_all_hide">Cancella tutte le app</string>
+    <string name="clear_all_app_message">Sei sicuro di voler cancellare tutte le app nascoste?</string>
+    <string name="hide_app_list_label">Elenco App Nascoste</string>
+    <string name="hide_app_initial_json" translatable="false">
+        {"versionCode": 37000,"totalCount": 0,"excludePackagesName": [""]}
+    </string>
+    <string name="hide_app_label">Nascondi questa app</string>
+    <string name="hide_app_dialog_title">Nascondi</string>
+    <string name="hide_app_dialog_message">Nascondere questa app la rimuoverà dall\'elenco app e non sarà trovabile tramite ricerca. Continuare?</string>
+    <string name="hide_success">App nascosta con successo</string>
+    <string name="hide_failed">Nascondi app fallito</string>
+    <string name="unhide_app_label">Mostra questa app</string>
+    <string name="unhide_app_dialog_title">Mostra</string>
+    <string name="unhide_app_dialog_message">Mostrare questa app la farà riapparire nell\'elenco. Continuare?</string>
+    <string name="unhide_success">App mostrata con successo</string>
+    <string name="unhide_failed">Mostra app fallito</string>
+
+    <!-- Icon Packs -->
+    <string name="icon_pack_default_pkg" translatable="false">android</string>
+    <string name="market_search_intent" translatable="false">market://search?c=apps</string>
+    <string name="icon_pack_title">Pacchetto icone</string>
+    <string name="icon_pack_default_label">Predefinito</string>
+    <string name="icon_pack_add">Installa altri</string>
+    <string name="icon_pack_no_market">Nessun app store disponibile</string>
+
+    <!-- Language -->
+    <string name="language_title">Lingua</string>
+    <string name="language_default">Di sistema</string>
+    <string name="language_it">Italiano</string>
+    <string name="language_fr">Francese</string>
+    <string name="language_es">Spagnolo</string>
+    <string name="language_en">Inglese</string>
+    <string name="language_zh">Cinese</string>
+    <string name="app_version_title">Versione</string>
+</resources>

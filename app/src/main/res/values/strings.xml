@@ -1,0 +1,180 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">F25Launcher</string>
+    <string name="menu">Menu</string>
+    <string name="contact">Contact</string>
+    <string name="power_btn">Power</string>
+    <string name="default_date">Aug 10th, 1919</string>
+    <string name="vol_media_title">Media / Game Volume</string>
+    <string name="vol_ring_title">Ringtone Volume</string>
+    <string name="vol_alarm_title">Alarm Volume</string>
+    <string name="volume_changer">Volume Changer</string>
+    <string name="default_lunar">" "</string>
+    <string name="menu_set_wallpaper">Set Wallpaper</string>
+    <string name="menu_settings_system">System Settings</string>
+    <string name="menu_start">How to use?</string>
+    <string name="menu_volume_dash">Volume Changer</string>
+    <string name="menu_settings_launcher">Launcher Settings</string>
+    <string name="menu_about_me">About</string>
+    <string name="menu_set_wallpaper_sum">Beautify your device</string>
+    <string name="menu_settings_system_sum">Setup your device</string>
+    <string name="menu_start_sum">Let me know !</string>
+    <string name="menu_volume_sum">Change device volume</string>
+    <string name="menu_settings_launcher_sum">Setup your launcher</string>
+    <string name="menu_about_sum">About this launcher</string>
+    <string name="menu_title">Menu</string>
+    <string name="choose_wallpaper">Choose a picture you like as the wallpaper of your device!</string>
+    <string name="back">Back</string>
+    <string name="power_shutdown">Spegni</string>
+    <string name="power_reboot">Riavvia</string>
+    <string name="default_volume" translatable="false">0</string>
+    <string name="default_app_title">App Title</string>
+    <string name="app_list_title">App List</string>
+    <string name="app_menu_string">Menu</string>
+    <string name="app_menu_open">Open</string>
+    <string name="app_menu_uninstall">Uninstall</string>
+    <string name="app_menu_info">App Info</string>
+    <string name="menu_about_phone">About phone</string>
+    <string name="current_volume">Current Volume :</string>
+    <string name="what">What are you looking forward to? XD</string>
+    <string name="version">"Version: "</string>
+    <string name="channel_name">"Channel: "</string>
+    <string name="debug_type">"Debug type: "</string>
+    <string name="connect_us">Connect with us</string>
+    <string name="about_desc">Wow such a good Gensokyo! \\n a simple Launcher for DPad Android Phone. \\n DuoQin Version</string>
+    <string name="easter_egg_string">Such a good Gensokyo!</string>
+    <string name="error_lock_phone">Error: Lock phone error!</string>
+    <string name="preference_main_category">Main Screen Settings</string>
+    <string name="clock_locate_left_up">Left up</string>
+    <string name="clock_locate_right_up">Right up</string>
+    <string name="clock_locate_left_down">Left down</string>
+    <string name="clock_locate_right_down">Right down</string>
+    <string name="clock_locate_custon">Custom locate</string>
+    <string name="clock_locate_title">Clock locate</string>
+    <string name="preference_main_clock_size">Clock size</string>
+    <string name="default_clock_size" translatable="false">58</string>
+    <string name="preference_main_default_launcher">Change default apps</string>
+    <string name="preference_func_category">Function settings</string>
+    <string name="warn_recent_disable">Recent Apps key is disabled.</string>
+    <string name="preference_admin_settings">Admin settings</string>
+    <string name="this_is_system_app">This is System app, cannot uninstall !</string>
+    <string name="refreshing_pkg_list">Refreshing App List…</string>
+    <string name="preference_carrier">Enable carrier name display</string>
+    <string name="preference_carrier_summary">Display carrier name in clock</string>
+    <string name="default_carrier">Genso Telecom</string>
+    <string name="preference_enable_dial">Enable Dial Pad</string>
+    <string name="preference_dial_summary">Enable DialPad mode</string>
+    <string name="permission_denied">It seems that a permission has been denied and we cannot provide this function</string>
+    <string name="err_pkg_not_found">Cannot found app, are you uninstalled the app or disabled the app?</string>
+    <string name="content_desc_app_icon">App Icon</string>
+    <string name="preference_app_list">App list style</string>
+    <string name="app_style_list">List</string>
+    <string name="app_style_grid">Grid</string>
+    <string name="loading">Loading…</string>
+    <string name="ok">OK</string>
+    <string name="simp_dialer">Dialer</string>
+    <string name="simp_msg">Messaging</string>
+    <string name="simp_contact">Contact</string>
+    <string name="simp_media">MultiMedia</string>
+    <string name="simp_netsrv">Net Service</string>
+    <string name="simp_settings">Settings</string>
+    <string name="simp_file">File Manager</string>
+    <string name="simp_tools">Tools</string>
+    <string name="simp_callcenter">Call Center</string>
+    <string name="preference_app_list_category">App List</string>
+    <string name="preference_app_list_func">Use Simple menu style</string>
+    <string name="preference_app_list_func_category">Enabling this option will show only system apps, other apps will be hidden</string>
+    <string name="err_string">Error</string>
+    <string name="trd_apps">Extra Toolbox</string>
+    <string name="osl">Open Source License</string>
+    <string name="status_reload_launcher">Restart</string>
+    <string name="abort_msg_uninstall_self">Uninstall myself,abort.</string>
+    <string name="preference_toolbox_enable_pwd">Enable Extra toolbox password</string>
+    <string name="preference_toolbox_enable_pwd_summary">When enabled, entering the toolbox will ask for a password.
+    </string>
+    <string name="keyguard_title">Extra Toolbox password authentication</string>
+    <string name="keyguard_description">Please enter your password and continue to open Extra Toolbox.</string>
+    <string name="preference_security_category">Security</string>
+    <string name="preference_toolbox_pwd_keyguard">Use Android keyguard authentication</string>
+    <string name="preference_toolbox_pwd_keyguard_summary">\
+        "If enabled, the desktop will uses the system's screen-lock password for authentication. When disabled, you can use a custom password. "
+    </string>
+    <string name="preference_toolbox_pwd_custom">Use custom password</string>
+    <string name="preference_toolbox_pwd_custom_summary">You can set a custom password.</string>
+    <string name="chs_lunar_text" translatable="false">农历  <xliff:g id="ganzhi">%s</xliff:g><xliff:g id="animal">%s</xliff:g> <xliff:g id="string">%s</xliff:g></string>
+    <string name="password_title">Input Password</string>
+    <string name="password_wrong">Wrong password!</string>
+    <string name="system_no_password">System is not password protected</string>
+    <string name="preference_callsms">Enable missed call sms counter</string>
+    <string name="preference_callsms_summary">Display missed call sms counter in clock</string>
+    <string name="permission_required_title">Need some necessary permissions</string>
+    <string name="permission_dnd_require">Please grant Do Not Disturb permission to switch on/off Do Not Disturb mode</string>
+    <string name="ring_mode_title">Mode</string>
+    <string name="ring_mode_normal">Normal</string>
+    <string name="ring_mode_vibrate">Vibrate</string>
+    <string name="ring_mode_dnd">DnD</string>
+    <string name="shortcuts_title">App Shortcuts</string>
+    <string name="no_shortcuts_toast">This app doesn\'t have shortcuts</string>
+    <string name="not_default_launcher_shortcut_msg">This software is not the default launcher can not use the shortcut function!</string>
+    <string name="focus_visual_title">Zoom effect of cursor focus</string>
+    <string name="focus_visual_summary">When this option is enabled, selecting an application and moving the focus will have a zoom in and zoom out effect.</string>
+    <string name="restart_dialog_msg">This will restart the launcher and is recommended only if there is a problem with the launcher. Does it continue?</string>
+    <string name="dark_mode_title">Dark mode</string>
+    <string name="dark_mode_summary">The app interface will be in dark color tones when this feature is enabled</string>
+    <string name="dark_mode_not_match">Caution! Currently this feature can cause occasional instability if it does not match the system`s Dark Mode state, and can be reintroduced back into the launcher by pressing the hangup button.</string>
+    <string name="dark_mode_not_support">Your device is not support dark mode!</string>
+
+    <!-- Sort type -->
+    <string name="sort_type_title">Sort type</string>
+    <string name="sort_type_pinyin">Name (PinYin)</string>
+    <string name="sort_type_default">Default</string>
+
+    <!-- Carrier Name -->
+    <string name="carrier_no_sim_text">No SIM card</string>
+    <string name="carrier_china_unicom">China Unicom</string>
+    <string name="carrier_cmcc">CMCC</string>
+    <string name="carrier_chn_ct">China Telecom</string>
+
+    <!-- Hide App -->
+    <string name="menu_hide_app_label">Hidden Apps</string>
+    <string name="menu_hide_app_summary">
+        When turned on, you can long press an app in the app screen and choose to hide the selected app in the menu.
+        After hiding, you can open the list in the menu option below, or press the number key 5 three times on the main app list screen to open the list.
+    </string>
+    <string name="menu_clear_all_hide">Clear all apps</string>
+    <string name="clear_all_app_message">Are you sure you want to clear all the apps that have been added to the hidden list?</string>
+    <string name="hide_app_list_label">Hidden App List</string>
+    <string name="hide_app_initial_json" translatable="false">
+        {"versionCode": 37000,"totalCount": 0,"excludePackagesName": [""]}
+    </string>
+    <string name="hide_app_label">Hide this app</string>
+    <string name="hide_app_dialog_title">Hide</string>
+    <string name="hide_app_dialog_message">Hide this app will not show up in the app list and the app cannot be found through the search function. Continue?</string>
+    <string name="hide_success">Hide app success</string>
+    <string name="hide_failed">Hide app fail</string>
+    <string name="unhide_app_label">Unhidden this app</string>
+    <string name="unhide_app_dialog_title">Unhidden</string>
+    <string name="unhide_app_dialog_message">Unhidden this app will reappear in the app list. Continue?</string>
+    <string name="unhide_success">Unhidden app success</string>
+    <string name="unhide_failed">Unhidden app fail</string>
+
+    <!-- Icon Packs -->
+    <!-- Default icon pack package. Set to "android" to use default / original icons -->
+    <string name="icon_pack_default_pkg" translatable="false">android</string>
+    <!-- String representing the intent for search on the apps market. To specify a query, add
+    q=<query> to the data to the intent -->
+    <string name="market_search_intent" translatable="false">market://search?c=apps</string>
+    <string name="icon_pack_title">Icon pack</string>
+    <string name="icon_pack_default_label">Default</string>
+    <string name="icon_pack_add">Install more</string>
+    <string name="icon_pack_no_market">There\'s no available app store</string>
+
+    <!-- Language -->
+    <string name="language_title">Language</string>
+    <string name="language_default">System</string>
+    <string name="language_it">Italian</string>
+    <string name="language_fr">French</string>
+    <string name="language_es">Spanish</string>
+    <string name="language_en">English</string>
+    <string name="language_zh">Chinese</string>
+    <string name="app_version_title">Versione</string>
+</resources>

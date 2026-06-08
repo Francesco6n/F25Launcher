@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MicroLauncher" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/primary_light</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:actionBarSize">48dp</item>
+        <item name="actionBarStyle">@style/MicroLauncherActionBar</item>
+    </style>
+
+    <style name="MicroLauncherActionBar" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/MicroLauncherActionBarTitle</item>
+    </style>
+
+    <style name="MicroLauncherActionBarTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Theme.MicroLauncher.NoActionBar" parent="Theme.MicroLauncher">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="TranslucentActivity" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/transpart</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:statusBarColor">@color/transpart</item>
+    </style>
+
+    <style name="Recycler_Scroll">
+        <item name="android:scrollbarSize">6dp</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fastScrollEnabled">true</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarThumbVertical">@color/title_color</item>
+    </style>
+
+    <style name="Material3Button" parent="Widget.Material3.Button.ElevatedButton.Icon">
+        <item name="iconSize">18dp</item>
+        <item name="backgroundTint">@color/system_accent_soft</item>
+        <item name="elevation">10dp</item>
+    </style>
+
+    <declare-styleable name="ButtonPreference">
+        <attr name="btn_icon" format="reference" />
+        <attr name="btn_text" format="string" />
+        <attr name="isClickable" format="boolean" />
+    </declare-styleable>
+
+</resources>

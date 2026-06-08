@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"
+        tools:ignore="ProtectedPermissions"/>
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+    </queries>
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:fullBackupOnly="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MicroLauncher">
+
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="${BUGLY_APP_ID}" />
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="${BUGLY_APP_CHANNEL}" />
+
+        <service
+            android:process=":restart"
+            android:name=".service.KillSelfSrv"
+            android:enabled="true"
+            android:exported="false"/>
+
+        <service
+            android:name=".service.MenuKeyService"
+            android:exported="true"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+
+        <service
+            android:name=".service.KaiNotificationListenerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:excludeFromRecents="true"
+            android:clearTaskOnLaunch="true"
+            android:launchMode="singleTask"
+            android:exported="true"
+            android:theme="@style/TranslucentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VolumeChanger"
+            android:exported="true"
+            android:label="@string/volume_changer"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.MicroLauncher" />
+        <activity
+            android:name=".activity.MenuActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:icon="@drawable/launcher_option"
+            android:label="@string/menu_title"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.MicroLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.APPLICATION_PREFERENCES" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AppListActivity"
+            android:excludeFromRecents="true"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:label=""
+            android:theme="@style/Theme.MicroLauncher.NoActionBar" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="@string/menu_about_sum"
+            android:theme="@style/Theme.MicroLauncher" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/launcher_option"
+            android:exported="false"
+            android:label="@string/menu_settings_launcher"
+            android:theme="@style/Theme.MicroLauncher" />
+        <activity
+            android:name=".activity.AppList3rdActivity"
+            android:excludeFromRecents="false"
+            android:clearTaskOnLaunch="true"
+            android:exported="true"
+            android:icon="@drawable/toolbox"
+            android:label="@string/trd_apps"
+            android:theme="@style/Theme.MicroLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.KeyguardVerificationActivity"
+            android:excludeFromRecents="true"
+            android:icon="@drawable/ic_lock"
+            android:exported="false"
+            android:label="@string/keyguard_title"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar" />
+        <activity android:name=".activity.AppHideListActivity"
+            android:exported="false"
+            android:label="@string/hide_app_list_label"
+            android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="com.F25Launcher.action.HIDE_APP_LIST"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.PowerOptionsActivity"
+            android:exported="false"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.MicroLauncher.NoActionBar" />
+
+        <activity android:name=".icons.IconPackSettingsActivity"
+            android:exported="false"
+            android:label="@string/icon_pack_title"
+            android:theme="@style/Theme.MicroLauncher"
+            android:autoRemoveFromRecents="true">
+            <intent-filter>
+                <action android:name="com.F25Launcher.action.ICON_PACK"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/settings_fragments"
+        android:name="com.F25Launcher.preference.SettingsFragments" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transpart">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/secondary_text"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"/>
+
+        <TextView
+            android:id="@+id/settings_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:focusable="false"
+            android:text="@string/back"
+            android:textColor="#9E9E9E"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</LinearLayout>
