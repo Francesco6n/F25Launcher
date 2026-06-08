@@ -8,18 +8,25 @@ While it was specifically developed for the **SAIET Link 4 Pro**, it should also
 Develop a launcher for this phone to replace the stock launcher, which is widely considered poor in usability.
 
 ## The Problem
-The stock launcher isn’t just a launcher.
+The stock launcher isn’t just a launcher.  
+
 The "System" app bundles the launcher, built-in apps, the notification system, and hardware key management.
 
 ## The Solution
-**F25launcher** calls the individual apps embedded in "System" and makes them available in the app drawer.
-It interprets and replicates notifications and handles hardware key functions.
-However, for everything to work, the "System" app must remain running in the background.
+**F25launcher** calls the individual apps embedded in "System" and makes them available in the app drawer.  
+
+It interprets and replicates notifications and handles hardware key functions.  
+
+However, for everything to work, the "System" app must remain running in the background.  
+
 
 ## The Result
-✅ A standard, optimized launcher designed to work with hardware keys only.
-✅ An app drawer that includes both user-installed apps and those embedded in "System".
-✅ Customization options: wallpaper, icons, drawer style, language, etc.
+✅ A standard, optimized launcher designed to work with hardware keys only.  
+
+✅ An app drawer that includes both user-installed apps and those embedded in "System".  
+
+✅ Customization options: wallpaper, icons, drawer style, language, etc.  
+
 
 ## Screenshots
 
