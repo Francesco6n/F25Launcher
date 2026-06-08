@@ -255,7 +255,8 @@ public class AppListActivity extends AppCompatActivity
             Intent appIntent = new Intent().setClassName(packageName, resolveInfo.activityInfo.name);
             Drawable appIcon = resolveInfo.loadIcon(getPackageManager());
             //如果应用的包名在排除列表内
-            if (excludePackagesList != null && excludePackagesList.contains(packageName)) {
+            String appClassName = resolveInfo.activityInfo.name;
+            if (excludePackagesList != null && (excludePackagesList.contains(packageName) || excludePackagesList.contains(packageName + "/" + appClassName))) {
                 continue;
             }
             if (BuildConfig.DEBUG) Log.d(TAG,"packageName: " + packageName);
@@ -382,13 +383,20 @@ public class AppListActivity extends AppCompatActivity
         addKaiOSApp(kaiosApps, "Musica", "gwin.com.firefox", "gwin.com.firefox.music.MusicActivity", R.drawable.kaios_music);
         addKaiOSApp(kaiosApps, "Video", "gwin.com.firefox", "gwin.com.firefox.video.VideoActivity", R.drawable.kaios_video);
         addKaiOSApp(kaiosApps, "Radio FM", "gwin.com.firefox", "gwin.com.firefox.fm.FmActivity", R.drawable.kaios_fm);
-        addKaiOSApp(kaiosApps, "Impostazioni", "gwin.com.firefox", "gwin.com.firefox.setting.SettingsActivity", R.drawable.kaios_settings);
         addKaiOSApp(kaiosApps, "Note", "gwin.com.firefox", "gwin.com.firefox.note.NoteActivity", R.drawable.kaios_note);
-        addKaiOSApp(kaiosApps, "Browser", "com.android.browser", "com.android.browser.BrowserActivity", R.drawable.kaios_browser);
-        addKaiOSApp(kaiosApps, "Registratore", "com.android.soundrecorder", "com.android.soundrecorder.SoundRecorder", R.drawable.kaios_recorder);
-        addKaiOSApp(kaiosApps, "Galleria", "com.android.gallery", "com.android.camera.GalleryPicker", R.drawable.kaios_gallery);
+        addKaiOSApp(kaiosApps, "Foto contatti", "gwin.com.firefox", "gwin.com.firefox.contact.PhotoContactActivity", R.drawable.kaios_photo_contacts);
+        addKaiOSApp(kaiosApps, "Lente", "gwin.com.firefox", "gwin.com.firefox.camera.MagnifierActivity", R.drawable.kaios_magnifier);
+        addKaiOSApp(kaiosApps, "Note vocali", "gwin.com.firefox", "gwin.com.firefox.voice_memo.VoiceMemoActivity", R.drawable.kaios_voice_memos);
 
         for (Application app : kaiosApps) {
+            if (excludePackagesList != null) {
+                String appKey = app.getAppIntent().getComponent() != null
+                        ? app.getPkgName() + "/" + app.getAppIntent().getComponent().getClassName()
+                        : app.getPkgName();
+                if (excludePackagesList.contains(appKey)) {
+                    continue;
+                }
+            }
             int i = 0;
             while (i < list.size()) {
                 if (list.get(i).getAppLabel().toString().compareToIgnoreCase(app.getAppLabel().toString()) > 0) {

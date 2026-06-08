@@ -116,8 +116,11 @@ public class HideAppAdapter extends AppAdapter {
                     }
                     break;
                 case 4:
+                    String hideKey = application.getAppIntent().getComponent() != null
+                            ? application.getPkgName() + "/" + application.getAppIntent().getComponent().getClassName()
+                            : application.getPkgName();
                     LauncherUtils.showExcludeAppDialog(mItemView.getContext(),
-                            (String) application.getAppLabel(), application.getPkgName(), false);
+                            (String) application.getAppLabel(), hideKey, false);
                     break;
             }
             return false;

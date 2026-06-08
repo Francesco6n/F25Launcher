@@ -233,8 +233,11 @@ public class AppAdapter extends RecyclerView.Adapter<AppAdapter.ApplicationViewH
                     }
                     break;
                 case 4:
+                    String hideKey = application.getAppIntent().getComponent() != null
+                            ? application.getPkgName() + "/" + application.getAppIntent().getComponent().getClassName()
+                            : application.getPkgName();
                     LauncherUtils.showExcludeAppDialog(mItemView.getContext(),
-                            (String) application.getAppLabel(), application.getPkgName(), true);
+                            (String) application.getAppLabel(), hideKey, true);
                     break;
             }
             return false;

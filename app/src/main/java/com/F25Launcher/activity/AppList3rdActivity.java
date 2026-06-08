@@ -222,7 +222,8 @@ public class AppList3rdActivity extends AppCompatActivity
             Intent appIntent = new Intent().setClassName(packageName, resolveInfo.activityInfo.name);
             Drawable appIcon = resolveInfo.loadIcon(getPackageManager());
             //如果应用的包名在排除列表内
-            if (excludePackagesList != null && excludePackagesList.contains(packageName)) {
+            String appClassName = resolveInfo.activityInfo.name;
+            if (excludePackagesList != null && (excludePackagesList.contains(packageName) || excludePackagesList.contains(packageName + "/" + appClassName))) {
                 continue;
             }
             if (BuildConfig.DEBUG) Log.d(TAG,"packageName: " + packageName);

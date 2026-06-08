@@ -100,7 +100,7 @@ public class AppHideListActivity extends AppCompatActivity
                     isSystemApp, //是否为系统应用
                     appIntent, //启动Intent
                     resolveInfo.activityInfo.packageName); //包名
-            if (excludePackagesList.contains(packageName) && !appLabel.equals(getString(R.string.app_name))) {
+            if ((excludePackagesList.contains(packageName) || excludePackagesList.contains(packageName + "/" + resolveInfo.activityInfo.name)) && !appLabel.equals(getString(R.string.app_name))) {
                 mApplicationList.add(application);
             }
         }
